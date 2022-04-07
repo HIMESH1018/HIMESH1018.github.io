@@ -918,6 +918,15 @@ section .container {
   background-color: #18d26e;
 }
 
+@media (max-width: 600px) {
+  .portfolio-details .swiper-slide {
+   
+    display: none;
+
+  }
+}
+
+
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
