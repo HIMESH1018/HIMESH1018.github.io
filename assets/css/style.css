@@ -555,7 +555,7 @@ section .container {
   display: inline-flexbox;
   background: whitesmoke;
   color: #18d26e;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 20px;
   padding: 10px 20px;
   margin-top: 20px;
@@ -563,7 +563,8 @@ section .container {
   border: 2px solid whitesmoke;
   transition: all 0.3s ease;
   text-align: center;
-  align-items: flex-end;
+  align-items:center;
+  
   
 }
 
