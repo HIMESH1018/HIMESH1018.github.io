@@ -1,5 +1,800 @@
-<script>
- 
-  document.write(unescape('%3C%21DOCTYPE%20html%3E%0A%3Chtml%20lang%3D%22en%22%3E%0A%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22utf-8%22%3E%0A%20%20%3Cmeta%20content%3D%22width%3Ddevice-width%2C%20initial-scale%3D1.0%22%20name%3D%22viewport%22%3E%0A%0A%20%20%3Ctitle%3EHimesh%27s%20Portfolio%20Website%3C/title%3E%0A%20%20%3Cmeta%20content%3D%22%22%20name%3D%22description%22%3E%0A%20%20%3Cmeta%20content%3D%22%22%20name%3D%22keywords%22%3E%0A%0A%20%20%3C%21--%20Favicons%20--%3E%0A%20%20%3Clink%20href%3D%22assets/img/favicon.png%22%20rel%3D%22icon%22%3E%0A%20%20%3Clink%20href%3D%22assets/img/apple-touch-icon.png%22%20rel%3D%22apple-touch-icon%22%3E%0A%0A%20%20%3C%21--%20Google%20Fonts%20--%3E%0A%20%20%3Clink%20href%3D%22https%3A//fonts.googleapis.com/css%3Ffamily%3DOpen+Sans%3A300%2C300i%2C400%2C400i%2C600%2C600i%2C700%2C700i%7CRaleway%3A300%2C300i%2C400%2C400i%2C500%2C500i%2C600%2C600i%2C700%2C700i%7CPoppins%3A300%2C300i%2C400%2C400i%2C500%2C500i%2C600%2C600i%2C700%2C700i%22%20rel%3D%22stylesheet%22%3E%0A%0A%20%20%3C%21--%20Vendor%20CSS%20Files%20--%3E%0A%20%20%3Clink%20href%3D%22assets/vendor/bootstrap/css/bootstrap.min.css%22%20rel%3D%22stylesheet%22%3E%0A%20%20%3Clink%20href%3D%22assets/vendor/bootstrap-icons/bootstrap-icons.css%22%20rel%3D%22stylesheet%22%3E%0A%20%20%3Clink%20href%3D%22assets/vendor/boxicons/css/boxicons.min.css%22%20rel%3D%22stylesheet%22%3E%0A%20%20%3Clink%20href%3D%22assets/vendor/glightbox/css/glightbox.min.css%22%20rel%3D%22stylesheet%22%3E%0A%20%20%3Clink%20href%3D%22assets/vendor/remixicon/remixicon.css%22%20rel%3D%22stylesheet%22%3E%0A%20%20%0A%20%20%3Clink%20href%3D%22assets/vendor/swiper/swiper-bundle.min.css%22%20rel%3D%22stylesheet%22%3E%0A%0A%20%20%3C%21--%20Template%20Main%20CSS%20File%20--%3E%0A%20%20%3Clink%20href%3D%22assets/css/style.css%22%20rel%3D%22stylesheet%22%3E%0A%20%20%3Clink%20href%3D%22assets/css/snow_effect.css%22%20rel%3D%22stylesheet%22%3E%0A%0A%20%20%3C%21--Snow%20Theme--%3E%0A%0A%3Cdiv%20class%3D%22snowflake%22%3E%0A%20%20%u2745%0A%20%20%3C/div%3E%0A%20%20%3Cdiv%20class%3D%22snowflake%22%3E%0A%20%20%u2745%0A%20%20%3C/div%3E%0A%20%20%3Cdiv%20class%3D%22snowflake%22%3E%0A%20%20%u2746%0A%20%20%3C/div%3E%0A%20%20%3Cdiv%20class%3D%22snowflake%22%3E%0A%20%20%u2744%0A%20%20%3C/div%3E%0A%20%20%3Cdiv%20class%3D%22snowflake%22%3E%0A%20%20%u2745%0A%20%20%3C/div%3E%0A%20%20%3Cdiv%20class%3D%22snowflake%22%3E%0A%20%20%u2746%0A%20%20%3C/div%3E%0A%20%20%3Cdiv%20class%3D%22snowflake%22%3E%0A%20%20%u2744%0A%20%20%3C/div%3E%0A%20%20%3Cdiv%20class%3D%22snowflake%22%3E%0A%20%20%u2745%0A%20%20%3C/div%3E%0A%20%20%3Cdiv%20class%3D%22snowflake%22%3E%0A%20%20%u2746%0A%20%20%3C/div%3E%0A%20%20%3Cdiv%20class%3D%22snowflake%22%3E%0A%20%20%u2744%0A%20%20%3C/div%3E%0A%20%20%0A%0A%0A%20%20%3C%21--end%20of%20snow%20theme--%3E%0A%0A%20%20%3C%21--%20%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0A%20%20*%20Template%20Name%3A%20Personal%20-%20v4.7.0%0A%20%20*%20Template%20URL%3A%20https%3A//bootstrapmade.com/personal-free-resume-bootstrap-template/%0A%20%20*%20Author%3A%20BootstrapMade.com%0A%20%20*%20License%3A%20https%3A//bootstrapmade.com/license/%0A%20%20%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%20--%3E%0A%3C/head%3E%0A%0A%3Cbody%3E%0A%0A%20%20%3C%21--%20%3D%3D%3D%3D%3D%3D%3D%20Header%20%3D%3D%3D%3D%3D%3D%3D%20--%3E%0A%20%20%3Cheader%20id%3D%22header%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22container%22%3E%0A%0A%20%20%20%20%20%20%3Ch1%3E%3Ca%20href%3D%22index.html%22%3EHimesh%20Perera%3C/a%3E%3C/h1%3E%0A%20%20%20%20%20%20%3C%21--%20Uncomment%20below%20if%20you%20prefer%20to%20use%20an%20image%20logo%20--%3E%0A%20%20%20%20%20%20%3C%21--%20%3Ca%20href%3D%22index.html%22%20class%3D%22mr-auto%22%3E%3Cimg%20src%3D%22assets/img/logo.png%22%20alt%3D%22%22%20class%3D%22img-fluid%22%3E%3C/a%3E%20--%3E%0A%20%20%20%20%20%20%3Ch2%3EI%27m%20a%20passionate%20%3Cspan%3EAndroid%20Developer%3C/span%3E%3C/h2%3E%0A%0A%20%20%20%20%20%20%3Cnav%20id%3D%22navbar%22%20class%3D%22navbar%22%3E%0A%20%20%20%20%20%20%20%20%3Cul%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cli%3E%3Ca%20class%3D%22nav-link%20active%22%20href%3D%22%23header%22%3EHome%3C/a%3E%3C/li%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cli%3E%3Ca%20class%3D%22nav-link%22%20href%3D%22%23about%22%3EAbout%3C/a%3E%3C/li%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cli%3E%3Ca%20class%3D%22nav-link%22%20href%3D%22%23resume%22%3EResume%3C/a%3E%3C/li%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cli%3E%3Ca%20class%3D%22nav-link%22%20href%3D%22%23services%22%3EServices%3C/a%3E%3C/li%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cli%3E%3Ca%20class%3D%22nav-link%22%20href%3D%22%23portfolio%22%3EPortfolio%3C/a%3E%3C/li%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cli%3E%3Ca%20class%3D%22nav-link%22%20href%3D%22%23contact%22%3EContact%3C/a%3E%3C/li%3E%0A%20%20%20%20%20%20%20%20%3C/ul%3E%0A%20%20%20%20%20%20%20%20%3Ci%20class%3D%22bi%20bi-list%20mobile-nav-toggle%22%3E%3C/i%3E%0A%20%20%20%20%20%20%3C/nav%3E%3C%21--%20.navbar%20--%3E%0A%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22social-links%22%3E%0A%20%20%20%20%20%20%20%20%3Ca%20href%3D%22https%3A//twitter.com/pererahimesh%22%22%20class%3D%22twitter%22%20target%3D%22_blank%22%3E%3Ci%20class%3D%22bi%20bi-twitter%22%3E%3C/i%3E%20%3C/a%3E%0A%20%20%20%20%20%20%20%20%3Ca%20href%3D%22https%3A//www.facebook.com/himesh.lucky/%22%20class%3D%22facebook%22%20target%3D%22_blank%22%3E%3Ci%20class%3D%22bi%20bi-facebook%22%3E%3C/i%3E%3C/a%3E%0A%20%20%20%20%20%20%20%20%3Ca%20href%3D%22https%3A//www.instagram.com/himesh_._/%22%20class%3D%22instagram%22%20target%3D%22_blank%22%3E%3Ci%20class%3D%22bi%20bi-instagram%22%3E%3C/i%3E%3C/a%3E%0A%20%20%20%20%20%20%20%20%3Ca%20href%3D%22https%3A//www.linkedin.com/in/himesh-lucky/%22%20class%3D%22linkedin%22%20target%3D%22_blank%22%3E%3Ci%20class%3D%22bi%20bi-linkedin%22%3E%3C/i%3E%3C/a%3E%0A%20%20%20%20%20%20%20%20%3Ca%20href%3D%22https%3A//github.com/HIMESH1018%22%20class%3D%22github%22%20target%3D%22_blank%22%3E%3Ci%20class%3D%22bi%20bi-github%22%20target%3D%22_blank%22%3E%3C/i%3E%3C/a%3E%0A%20%20%20%20%20%20%3C/div%3E%0A%0A%20%20%20%20%3C/div%3E%0A%20%20%3C/header%3E%3C%21--%20End%20Header%20--%3E%0A%0A%20%20%3C%21--%20%3D%3D%3D%3D%3D%3D%3D%20About%20Section%20%3D%3D%3D%3D%3D%3D%3D%20--%3E%0A%20%20%3Csection%20id%3D%22about%22%20class%3D%22about%22%3E%0A%0A%20%20%20%20%3C%21--%20%3D%3D%3D%3D%3D%3D%3D%20About%20Me%20%3D%3D%3D%3D%3D%3D%3D%20--%3E%0A%20%20%20%20%3Cdiv%20class%3D%22about-me%20container%22%3E%0A%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22section-title%22%3E%0A%20%20%20%20%20%20%20%20%3Ch2%3EAbout%3C/h2%3E%0A%20%20%20%20%20%20%20%20%3Cp%3ELearn%20more%20about%20me%3C/p%3E%0A%20%20%20%20%20%20%3C/div%3E%0A%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22row%22%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22col-lg-4%22%20data-aos%3D%22fade-right%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cimg%20src%3D%22assets/img/grad.jpg%22%20class%3D%22img-fluid%22%20alt%3D%22%22%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22col-lg-8%20pt-4%20pt-lg-0%20content%22%20data-aos%3D%22fade-left%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ch3%3EAndroid%20Developer%3C/h3%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cp%20class%3D%22fst-italic%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20I%20am%20a%20talented%2C%20ambitious%20and%20hardworking%20individual%2C%20with%20broad%20skills%20and%20experience%20in%20mobile%20developing%2C%20specially%20in%20android%0A%20%20%20%20%20%20%20%20%20%20%20%20developing%20projects.%0A%20%20%20%20%20%20%20%20%20%20%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22row%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22col-lg-6%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cul%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%3E%3Ci%20class%3D%22bi%20bi-chevron-right%22%3E%3C/i%3E%20%3Cstrong%3EBirthday%3A%3C/strong%3E%20%3Cspan%3E18%20Oct%201997%3C/span%3E%3C/li%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%3E%3Ci%20class%3D%22bi%20bi-chevron-right%22%3E%3C/i%3E%20%3Cstrong%3EWebsite%3A%3C/strong%3E%20%3Cspan%3Ehttps%3A//himesh1018.github.io%3C/span%3E%3C/li%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%3E%3Ci%20class%3D%22bi%20bi-chevron-right%22%3E%3C/i%3E%20%3Cstrong%3ECity%3A%3C/strong%3E%20%3Cspan%3EChilaw%20%2C%20Sri%20Lanka%3C/span%3E%3C/li%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/ul%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22col-lg-6%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cul%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%3E%3Ci%20class%3D%22bi%20bi-chevron-right%22%3E%3C/i%3E%20%3Cstrong%3EAge%3A%3C/strong%3E%20%3Cspan%3E25%3C/span%3E%3C/li%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%3E%3Ci%20class%3D%22bi%20bi-chevron-right%22%3E%3C/i%3E%20%3Cstrong%3EDegree%3A%3C/strong%3E%20%3Cspan%3EBSc%20in%20Information%20Technology%3C/span%3E%3C/li%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%3E%3Ci%20class%3D%22bi%20bi-chevron-right%22%3E%3C/i%3E%20%3Cstrong%3EEmail%3A%3C/strong%3E%20%3Cspan%3Epererahimesh39@gmail.com%3C/span%3E%3C/li%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/ul%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cp%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20Experienced%20Associate%20Software%20Engineer%20with%20a%20demonstrated%20history%20of%20working%20in%20the%20information%20technology%20and%20services%20industry.%20Skilled%20in%20Mobile%20Application%20Development%2C%20Java%2C%20Flutter%2C%20Kotlin%2C%20.NET%20Framework%2C%20and%20Android%20Development.%20Strong%20engineering%20professional%20with%20a%20Bsc%20in%20IT%20focused%20in%20Information%20Technology%20from%20SLIIT.%20%0A%20%20%20%20%20%20%20%20%20%20%3C/p%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%3C/div%3E%0A%0A%20%20%20%20%3C/div%3E%3C%21--%20End%20About%20Me%20--%3E%0A%0A%20%20%20%20%3C%21--%20%3D%3D%3D%3D%3D%3D%3D%20Counts%20%3D%3D%3D%3D%3D%3D%3D%20--%3E%0A%20%20%20%20%3C%21--%20%3Cdiv%20class%3D%22counts%20container%22%3E%0A%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22row%22%3E%0A%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22col-lg-3%20col-md-6%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22count-box%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ci%20class%3D%22bi%20bi-emoji-smile%22%3E%3C/i%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20data-purecounter-start%3D%220%22%20data-purecounter-end%3D%22232%22%20data-purecounter-duration%3D%221%22%20class%3D%22purecounter%22%3E%3C/span%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3EHappy%20Clients%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22col-lg-3%20col-md-6%20mt-5%20mt-md-0%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22count-box%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ci%20class%3D%22bi%20bi-journal-richtext%22%3E%3C/i%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20data-purecounter-start%3D%220%22%20data-purecounter-end%3D%22521%22%20data-purecounter-duration%3D%221%22%20class%3D%22purecounter%22%3E%3C/span%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3EProjects%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22col-lg-3%20col-md-6%20mt-5%20mt-lg-0%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22count-box%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ci%20class%3D%22bi%20bi-headset%22%3E%3C/i%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20data-purecounter-start%3D%220%22%20data-purecounter-end%3D%221463%22%20data-purecounter-duration%3D%221%22%20class%3D%22purecounter%22%3E%3C/span%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3EHours%20Of%20Support%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22col-lg-3%20col-md-6%20mt-5%20mt-lg-0%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22count-box%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ci%20class%3D%22bi%20bi-award%22%3E%3C/i%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20data-purecounter-start%3D%220%22%20data-purecounter-end%3D%2224%22%20data-purecounter-duration%3D%221%22%20class%3D%22purecounter%22%3E%3C/span%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3EAwards%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%0A%20%20%20%20%20%20%3C/div%3E%0A%0A%20%20%20%20%3C/div%3EEnd%20Counts%20--%3E%0A%0A%20%20%20%20%3C%21--%20%3D%3D%3D%3D%3D%3D%3D%20Skills%20%20%3D%3D%3D%3D%3D%3D%3D%20--%3E%0A%20%20%20%20%3Cdiv%20class%3D%22skills%20container%22%3E%0A%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22section-title%22%3E%0A%20%20%20%20%20%20%20%20%3Ch2%3ESkills%3C/h2%3E%0A%20%20%20%20%20%20%3C/div%3E%0A%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22row%20skills-content%22%3E%0A%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22col-lg-6%22%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22progress%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22skill%22%3EAndroid%20%3Ci%20class%3D%22val%22%3E85%25%3C/i%3E%3C/span%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22progress-bar-wrap%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22progress-bar%22%20role%3D%22progressbar%22%20aria-valuenow%3D%2285%22%20aria-valuemin%3D%220%22%20aria-valuemax%3D%22100%22%3E%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22progress%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22skill%22%3EJava%20%3Ci%20class%3D%22val%22%3E75%25%3C/i%3E%3C/span%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22progress-bar-wrap%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22progress-bar%22%20role%3D%22progressbar%22%20aria-valuenow%3D%2275%22%20aria-valuemin%3D%220%22%20aria-valuemax%3D%22100%22%3E%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22progress%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22skill%22%3EKotlin%20%3Ci%20class%3D%22val%22%3E50%25%3C/i%3E%3C/span%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22progress-bar-wrap%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22progress-bar%22%20role%3D%22progressbar%22%20aria-valuenow%3D%2250%22%20aria-valuemin%3D%220%22%20aria-valuemax%3D%22100%22%3E%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22col-lg-6%22%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22progress%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22skill%22%3EFlutter%20%7C%20Dart%20%3Ci%20class%3D%22val%22%3E55%25%3C/i%3E%3C/span%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22progress-bar-wrap%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22progress-bar%22%20role%3D%22progressbar%22%20aria-valuenow%3D%2255%22%20aria-valuemin%3D%220%22%20aria-valuemax%3D%22100%22%3E%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22progress%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22skill%22%3EC%23%20%7C%20.NET%20%3Ci%20class%3D%22val%22%3E50%25%3C/i%3E%3C/span%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22progress-bar-wrap%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22progress-bar%22%20role%3D%22progressbar%22%20aria-valuenow%3D%2260%22%20aria-valuemin%3D%220%22%20aria-valuemax%3D%22100%22%3E%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22progress%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22skill%22%3EHTML%20%7C%20CSS%20%3Ci%20class%3D%22val%22%3E55%25%3C/i%3E%3C/span%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22progress-bar-wrap%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22progress-bar%22%20role%3D%22progressbar%22%20aria-valuenow%3D%2255%22%20aria-valuemin%3D%220%22%20aria-valuemax%3D%22100%22%3E%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%0A%20%20%20%20%20%20%3C/div%3E%0A%0A%20%20%20%20%3C/div%3E%3C%21--%20End%20Skills%20--%3E%0A%0A%20%20%20%20%3C%21--%20%3D%3D%3D%3D%3D%3D%3D%20Interests%20%3D%3D%3D%3D%3D%3D%3D%20--%3E%0A%20%20%20%20%3Cdiv%20class%3D%22interests%20container%22%3E%0A%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22section-title%22%3E%0A%20%20%20%20%20%20%20%20%3Ch2%3EInterests%3C/h2%3E%0A%20%20%20%20%20%20%3C/div%3E%0A%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22row%22%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22col-lg-3%20col-md-4%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22icon-box%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ci%20class%3D%22ri-football-line%22%20style%3D%22color%3A%20%235578ff%3B%22%3E%3C/i%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ch3%3ESoccer%3C/h3%3E%0A%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22col-lg-3%20col-md-4%20mt-4%20mt-md-0%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22icon-box%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ci%20class%3D%22ri-playstation-line%22%20style%3D%22color%3A%20red%3B%22%3E%3C/i%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ch3%3EGaming%3C/h3%3E%0A%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22col-lg-3%20col-md-4%20mt-4%20mt-md-0%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22icon-box%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ci%20class%3D%22ri-computer-line%22%20style%3D%22color%3A%20%23e80368%3B%22%3E%3C/i%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ch3%3EEntertainment%3C/h3%3E%0A%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22col-lg-3%20col-md-4%20mt-4%20mt-lg-0%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22icon-box%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ci%20class%3D%22ri-spotify-line%22%20style%3D%22color%3A%20%2315bb62%3B%22%3E%3C/i%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ch3%3EMusic%3C/h3%3E%0A%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22col-lg-3%20col-md-4%20mt-4%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22icon-box%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ci%20class%3D%22ri-earth-line%22%20style%3D%22color%3A%20%2347aeff%3B%22%3E%3C/i%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ch3%3ETravel%3C/h3%3E%0A%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22col-lg-3%20col-md-4%20mt-4%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22icon-box%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ci%20class%3D%22ri-code-box-line%22%20style%3D%22color%3A%20%2315bb62%3B%22%3E%3C/i%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ch3%3EProgramming%3C/h3%3E%0A%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22col-lg-3%20col-md-4%20mt-4%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22icon-box%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ci%20class%3D%22ri-basketball-line%22%20style%3D%22color%3A%20wheat%3B%22%3E%3C/i%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ch3%3ECricket%3C/h3%3E%0A%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22col-lg-3%20col-md-4%20mt-4%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22icon-box%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ci%20class%3D%22ri-camera-3-line%22%20style%3D%22color%3A%20%23ffa76e%3B%22%3E%3C/i%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ch3%3EPhotography%3C/h3%3E%0A%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%3C/div%3E%0A%0A%20%20%20%20%3C/div%3E%3C%21--%20End%20Interests%20--%3E%0A%0A%20%20%20%20%3C%21--%20%3D%3D%3D%3D%3D%3D%3D%20Education%20Qualifications%20%3D%3D%3D%3D%3D%3D%3D%20--%3E%0A%20%20%20%20%3Cdiv%20class%3D%22testimonials%20container%22%3E%0A%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22section-title%22%3E%0A%20%20%20%20%20%20%20%20%3Ch2%3EEducation%3C/h2%3E%0A%20%20%20%20%20%20%3C/div%3E%0A%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22testimonials-slider%20swiper%22%20data-aos%3D%22fade-up%22%20data-aos-delay%3D%22100%22%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22swiper-wrapper%22%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22swiper-slide%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22testimonial-item%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ci%20class%3D%22bx%20bxs-quote-alt-left%20quote-icon-left%22%3E%3C/i%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20The%20Sri%20Lankan%20Ordinary%20Level%20%28O-level%29%20is%20a%20General%20Certificate%20of%20Education%20%28GCE%29%20qualification%20in%20Sri%20Lanka%2C%20conducted%20by%20the%20Department%20of%20Examinations%20of%20the%20Ministry%20of%20Education.%20It%20is%20based%20on%20the%20Cambridge%20University%20Ordinary%20Level%20qualification.%20%3C/br%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cb%3E%20Grade%206%20-%20Grade%2011%20%3C/b%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ci%20class%3D%22bx%20bxs-quote-alt-right%20quote-icon-right%22%3E%3C/i%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20src%3D%22assets/img/testimonials/download.jpeg%22%20class%3D%22testimonial-img%22%20alt%3D%22%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ch3%3EOrdinary%20Level%20-%202013%3C/h3%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ch4%3ESt.Mary%27s%20College%20Chilaw%3C/h4%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%3C/div%3E%3C%21--%20End%20testimonial%20item%20--%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22swiper-slide%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22testimonial-item%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ci%20class%3D%22bx%20bxs-quote-alt-left%20quote-icon-left%22%3E%3C/i%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20The%20Sri%20Lankan%20Advanced%20Level%20%28A-level%29%2C%20is%20a%20General%20Certificate%20of%20Education%20%28GCE%29%20qualification%20exam%20in%20Sri%20Lanka%2C%20similar%20to%20the%20British%20Advanced%20Level%2C%20conducted%20annually%20by%20the%20Department%20of%20Examinations%20of%20the%20Ministry%20of%20Education.%20%3C/br%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cb%3E%20Art%20Stream%20%3C/b%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ci%20class%3D%22bx%20bxs-quote-alt-right%20quote-icon-right%22%3E%3C/i%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20src%3D%22assets/img/testimonials/download.jpeg%22%20class%3D%22testimonial-img%22%20alt%3D%22%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ch3%3EAdvanced%20Level%20-%202016%3C/h3%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ch4%3ESt.Mary%27s%20College%20Chilaw%3C/h4%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%3C/div%3E%3C%21--%20End%20testimonial%20item%20--%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22swiper-slide%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22testimonial-item%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ci%20class%3D%22bx%20bxs-quote-alt-left%20quote-icon-left%22%3E%3C/i%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Bachelor%20of%20Science%20in%20Information%20Technology%20will%20equip%20you%20with%20the%20necessary%20skills%20and%20understanding%20to%20develop%20the%20career%20in%20wider%20area%20of%20IT%20project%20development%20%3C/br%3E%20%3C/br%3E%20%3C/br%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cb%3E%20BSc%20in%20IT%20%3C/b%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ci%20class%3D%22bx%20bxs-quote-alt-right%20quote-icon-right%22%3E%3C/i%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20src%3D%22assets/img/testimonials/sllit.jpeg%22%20class%3D%22testimonial-img%22%20alt%3D%22%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ch3%3E%20Bachelor%20Degree%20-%202018%20%7C%202021%3C/h3%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ch4%3ESri%20Lanka%20Institute%20of%20Information%20Technology%3C/h4%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%3C/div%3E%3C%21--%20End%20testimonial%20item%20--%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%3C%21--%20%3Cdiv%20class%3D%22swiper-slide%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22testimonial-item%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ci%20class%3D%22bx%20bxs-quote-alt-left%20quote-icon-left%22%3E%3C/i%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20The%20Sri%20Lankan%20Ordinary%20Level%20%28O-level%29%20is%20a%20General%20Certificate%20of%20Education%20%28GCE%29%20qualification%20in%20Sri%20Lanka%2C%20conducted%20by%20the%20Department%20of%20Examinations%20of%20the%20Ministry%20of%20Education.%20It%20is%20based%20on%20the%20Cambridge%20University%20Ordinary%20Level%20qualification.%20%3C/br%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cb%3E%20Grade%206%20-%20Grade%2011%20%3C/b%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ci%20class%3D%22bx%20bxs-quote-alt-right%20quote-icon-right%22%3E%3C/i%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20src%3D%22assets/img/testimonials/download.jpeg%22%20class%3D%22testimonial-img%22%20alt%3D%22%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ch3%3EOrdinary%20Level%3C/h3%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ch4%3ESt.Mary%27s%20College%20Chilaw%3C/h4%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%3C/div%3EEnd%20testimonial%20item%20--%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%3C%21--%20%3Cdiv%20class%3D%22swiper-slide%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22testimonial-item%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ci%20class%3D%22bx%20bxs-quote-alt-left%20quote-icon-left%22%3E%3C/i%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20The%20Sri%20Lankan%20Ordinary%20Level%20%28O-level%29%20is%20a%20General%20Certificate%20of%20Education%20%28GCE%29%20qualification%20in%20Sri%20Lanka%2C%20conducted%20by%20the%20Department%20of%20Examinations%20of%20the%20Ministry%20of%20Education.%20It%20is%20based%20on%20the%20Cambridge%20University%20Ordinary%20Level%20qualification.%20%3C/br%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cb%3E%20Grade%206%20-%20Grade%2011%20%3C/b%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ci%20class%3D%22bx%20bxs-quote-alt-right%20quote-icon-right%22%3E%3C/i%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20src%3D%22assets/img/testimonials/download.jpeg%22%20class%3D%22testimonial-img%22%20alt%3D%22%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ch3%3EOrdinary%20Level%3C/h3%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ch4%3ESt.Mary%27s%20College%20Chilaw%3C/h4%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%3C/div%3EEnd%20testimonial%20item%20--%3E%0A%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22swiper-pagination%22%3E%3C/div%3E%0A%20%20%20%20%20%20%3C/div%3E%0A%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22owl-carousel%20testimonials-carousel%22%3E%0A%0A%20%20%20%20%20%20%3C/div%3E%0A%0A%20%20%20%20%3C/div%3E%3C%21--%20End%20Testimonials%20%20--%3E%0A%0A%20%20%3C/section%3E%3C%21--%20End%20About%20Section%20--%3E%0A%0A%20%20%3C%21--%20%3D%3D%3D%3D%3D%3D%3D%20Resume%20Section%20%3D%3D%3D%3D%3D%3D%3D%20--%3E%0A%20%20%3Csection%20id%3D%22resume%22%20class%3D%22resume%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22container%22%3E%0A%20%20%20%20%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22section-title%22%3E%0A%20%20%20%20%20%20%20%20%3Ch2%3EResume%3C/h2%3E%0A%20%20%20%20%20%20%20%20%3Cp%3ECheck%20My%20Resume%3C/p%3E%0A%20%20%20%20%20%20%20%20%3Ca%20href%3D%22assets/pdf/Himesh_Perera.pdf%22%20target%3D%22_blank%22%3EDownload%20CV%20%3C/a%3E%0A%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22row%22%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22col-lg-6%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ch3%20class%3D%22resume-title%22%3ESumary%3C/h3%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22resume-item%20pb-0%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ch4%3EHimesh%20Perera%3C/h4%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3E%3Cem%3EI%20am%20a%20talented%2C%20ambitious%20and%20hardworking%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20individual%2C%20with%20broad%20skills%20and%20experiencein%20mobile%20developing%2C%20specially%20in%20android%20developing%20projects.Furthermore%2C%20I%20am%20adept%20at%20handling%20multiple%20tasks%20on%20a%20daily%20basis%20competently%20and%20at%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20working%20well%20under%20pressure.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/em%3E%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3E%0A%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%3Ch3%20class%3D%22resume-title%22%3EEducation%3C/h3%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22resume-item%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ch4%3ECertificate%20Course%20in%20English%3C/h4%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ch5%3ESep%202014%3C/h5%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3E%3Cem%3ESt.Anthony%27s%20Institues%20of%20Higher%20Studies%2CSri%20Lanka%3C/em%3E%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%0A%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22resume-item%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ch4%3ELevel%201%20International%20Diploma%20in%20Computing%3C/h4%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ch5%3ENov%202014%3C/h5%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3E%3Cem%3EEdHat%20International%2CEngland%3C/em%3E%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22resume-item%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ch4%3ELevel%203%20International%20Diploma%20in%20Computing%3C/h4%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ch5%3ENov%202014%3C/h5%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3E%3Cem%3EIDM%20Nations%20Campus%20International%2CSri%20Lanka%3C/em%3E%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22resume-item%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ch4%3EBachelor%20of%20Information%20Technology%3C/h4%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ch5%3E2018%20-%202020%3C/h5%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3E%3Cem%3ESri%20Lanka%20Institute%20of%20Information%20Technology%3C/em%3E%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22col-lg-6%22%3E%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%3Ch3%20class%3D%22resume-title%22%3EProfessional%20Experience%3C/h3%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22resume-item%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ch4%3EIntern%20Software%20Engineer%3C/h4%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ch5%3E2021%20%7C%20Jun%20-%20Dec%20%7C%3C/h5%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3E%3Cem%3EStephen%20Innovations%2CNegombo%2CSri%20Lanka%20%3C/em%3E%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cul%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%3EManaged%20in%20the%20design%2C%20development%2C%20and%20implementation%20of%20the%20native%20mobile%20application%20products.%3C/li%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%3EManaged%20up%20to%203%7C4%20projects%20or%20tasks%20at%20a%20given%20time%20while%20under%20pressure%20%3C/li%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%3EContributed%20the%20assessment%20of%20all%20graphic%20materials%20in%20order%20to%20ensure%20quality%20and%20accuracy%20of%20the%20design%3C/li%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%3EDiscuss%20and%20keep%20a%20connections%20with%20the%20clients%20to%20efficient%20use%20of%20project%20%3C/li%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/ul%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22resume-item%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ch4%3EAssociate%20Software%20Engineer%3C/h4%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ch5%3E2022%20%7C%20Jan%20-%20May%20%7C%3C/h5%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3E%3Cem%3EStephen%20Innovations%2CNegombo%2CSri%20Lanka%3C/em%3E%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cul%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%3EDeveloped%20numerous%20mobile%20applications%28ecommerce%2CTaxi%2CEduation%2CManagement%2C%20and%20Services%29.%3C/li%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%3EManaged%20up%20to%204%7C5%20projects%20or%20tasks%20at%20a%20given%20time%20while%20under%20pressure%3C/li%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%3ELearn%20and%20deployed%20applications%20using%20cross%20platform%20technology%20as%20a%20beginner.%20%7C%20Flutter%20%26%20Dart%20%7C%3C/li%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%3ECreated%20design%20presentations%20and%20portfolios%20to%20previous%20projects%3C/li%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/ul%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22resume-item%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ch4%3EAndroid%20Developer%3C/h4%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ch5%3E2022%20%7C%20June%20-%20Nov%20%7C%3C/h5%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3E%3Cem%3EDishserve%2CIndonesia%3C/em%3E%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%21--%20%3Cul%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%3EDeveloped%20numerous%20mobile%20applications%28ecommerce%2CTaxi%2CEduation%2CManagement%2C%20and%20Services%29.%3C/li%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%3EManaged%20up%20to%204%7C5%20projects%20or%20tasks%20at%20a%20given%20time%20while%20under%20pressure%3C/li%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%3ELearn%20and%20deployed%20applications%20using%20cross%20platform%20technology%20as%20a%20beginner.%20%7C%20Flutter%20%26%20Dart%20%7C%3C/li%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%3ECreated%20design%20presentations%20and%20portfolios%20to%20previous%20projects%3C/li%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/ul%3E%20--%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%0A%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22resume-item%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ch4%3EAssociate%20Software%20Engineer%3C/h4%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ch5%3E2022%20%7C%20Nov%20-%20Present%20%7C%3C/h5%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3E%3Cem%3EPeercore%2CColombo%203%3C/em%3E%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%21--%20%3Cul%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%3EDeveloped%20numerous%20mobile%20applications%28ecommerce%2CTaxi%2CEduation%2CManagement%2C%20and%20Services%29.%3C/li%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%3EManaged%20up%20to%204%7C5%20projects%20or%20tasks%20at%20a%20given%20time%20while%20under%20pressure%3C/li%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%3ELearn%20and%20deployed%20applications%20using%20cross%20platform%20technology%20as%20a%20beginner.%20%7C%20Flutter%20%26%20Dart%20%7C%3C/li%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%3ECreated%20design%20presentations%20and%20portfolios%20to%20previous%20projects%3C/li%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/ul%3E%20--%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%3C/div%3E%0A%0A%20%20%20%20%3C/div%3E%0A%20%20%3C/section%3E%3C%21--%20End%20Resume%20Section%20--%3E%0A%0A%20%20%3C%21--%20%3D%3D%3D%3D%3D%3D%3D%20Services%20Section%20%3D%3D%3D%3D%3D%3D%3D%20--%3E%0A%20%20%3Csection%20id%3D%22services%22%20class%3D%22services%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22container%22%3E%0A%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22section-title%22%3E%0A%20%20%20%20%20%20%20%20%3Ch2%3EServices%3C/h2%3E%0A%20%20%20%20%20%20%20%20%3Cp%3EMy%20Services%3C/p%3E%0A%20%20%20%20%20%20%3C/div%3E%0A%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22row%22%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22col-lg-4%20col-md-6%20d-flex%20align-items-stretch%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22icon-box%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22icon%22%3E%3Ci%20class%3D%22bx%20bxl-android%22%3E%3C/i%3E%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ch4%3E%3Ca%20href%3D%22%23%22%3EAndroid%20Application%20Development%3C/a%3E%3C/h4%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3EDevelop%20and%20deploy%20native%20mobile%20applications%20using%20java%20or%20kotlin.%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22col-lg-4%20col-md-6%20d-flex%20align-items-stretch%20mt-4%20mt-md-0%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22icon-box%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22icon%22%3E%3Ci%20class%3D%22bx%20bxl-flutter%22%3E%3C/i%3E%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ch4%3E%3Ca%20href%3D%22%23%22%3EHybrid%20Application%20Development%3C/a%3E%3C/h4%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3EDevelop%20and%20deploy%20cross%20paltform%20mobile%20applications%20using%20flutter%20and%20dart.%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22col-lg-4%20col-md-6%20d-flex%20align-items-stretch%20mt-4%20mt-lg-0%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22icon-box%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22icon%22%3E%3Ci%20class%3D%22bx%20bx-support%22%3E%3C/i%3E%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ch4%3E%3Ca%20href%3D%22%23%22%3ESupport%20and%20Consultation%3C/a%3E%3C/h4%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3EGive%20Support%20and%20consultaion%20regarding%20android%20application%20development.%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%0A%20%20%20%20%20%20%20%0A%0A%20%20%20%20%20%20%3C/div%3E%0A%0A%20%20%20%20%3C/div%3E%0A%20%20%3C/section%3E%3C%21--%20End%20Services%20Section%20--%3E%0A%0A%20%20%3C%21--%20%3D%3D%3D%3D%3D%3D%3D%20Portfolio%20Section%20%3D%3D%3D%3D%3D%3D%3D%20--%3E%0A%20%20%3Csection%20id%3D%22portfolio%22%20class%3D%22portfolio%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22container%22%3E%0A%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22section-title%22%3E%0A%20%20%20%20%20%20%20%20%3Ch2%3EPortfolio%3C/h2%3E%0A%20%20%20%20%20%20%20%20%3Cp%3EMy%20Works%3C/p%3E%0A%20%20%20%20%20%20%3C/div%3E%0A%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22row%22%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22col-lg-12%20d-flex%20justify-content-center%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cul%20id%3D%22portfolio-flters%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%20data-filter%3D%22*%22%20class%3D%22filter-active%22%3EAll%3C/li%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%20data-filter%3D%22.filter-native%22%3ENative%3C/li%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%20data-filter%3D%22.filter-flutter%22%3EFlutter%3C/li%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%20data-filter%3D%22.filter-web%22%3EWeb%3C/li%3E%0A%20%20%20%20%20%20%20%20%20%20%3C/ul%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%3C/div%3E%0A%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22row%20portfolio-container%22%3E%0A%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22col-lg-4%20col-md-6%20portfolio-item%20filter-native%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22portfolio-wrap%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20src%3D%22assets/img/portfolio/buynear.jpg%22%20class%3D%22img-fluid%22%20alt%3D%22%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22portfolio-info%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ch4%3ENative%20App%201%3C/h4%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3ENative%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22portfolio-links%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22assets/img/portfolio/buynear.jpg%22%20data-gallery%3D%22portfolioGallery%22%20class%3D%22portfolio-lightbox%22%20title%3D%22Native%20App%201%22%3E%3Ci%20class%3D%22bx%20bx-plus%22%3E%3C/i%3E%3C/a%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22buyNear.html%22%20target%3D%22_blank%22%20data-gallery%3D%22portfolioDetailsGallery%22%20data-glightbox%3D%22type%3A%20external%22%20class%3D%22portfolio-details-lightbox%22%20title%3D%22Portfolio%20Details%22%3E%3Ci%20class%3D%22bx%20bx-link%22%3E%3C/i%3E%3C/a%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22col-lg-4%20col-md-6%20portfolio-item%20filter-native%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22portfolio-wrap%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20src%3D%22assets/img/portfolio/twelve7.jpg%22%20class%3D%22img-fluid%22%20alt%3D%22%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22portfolio-info%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ch4%3ENative%20App%202%3C/h4%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3ENative%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22portfolio-links%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22assets/img/portfolio/twelve7.jpg%22%20data-gallery%3D%22portfolioGallery%22%20class%3D%22portfolio-lightbox%22%20title%3D%22Native%20App%202%22%3E%3Ci%20class%3D%22bx%20bx-plus%22%3E%3C/i%3E%3C/a%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22twelve7.html%22%20target%3D%22_blank%22%20data-gallery%3D%22portfolioDetailsGallery%22%20data-glightbox%3D%22type%3A%20external%22%20class%3D%22portfolio-details-lightbox%22%20title%3D%22Portfolio%20Details%22%3E%3Ci%20class%3D%22bx%20bx-link%22%3E%3C/i%3E%3C/a%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22col-lg-4%20col-md-6%20portfolio-item%20filter-flutter%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22portfolio-wrap%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20src%3D%22assets/img/portfolio/maid.jpg%22%20class%3D%22img-fluid%22%20alt%3D%22%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22portfolio-info%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ch4%3EFlutter%20App%201%3C/h4%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3EFlutter%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22portfolio-links%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22assets/img/portfolio/maid.jpg%22%20data-gallery%3D%22portfolioGallery%22%20class%3D%22portfolio-lightbox%22%20title%3D%22Flutter%20App%201%22%3E%3Ci%20class%3D%22bx%20bx-plus%22%3E%3C/i%3E%3C/a%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22maidFinder.html%22%20target%3D%22_blank%22%20data-gallery%3D%22portfolioDetailsGallery%22%20data-glightbox%3D%22type%3A%20external%22%20class%3D%22portfolio-details-lightbox%22%20title%3D%22Portfolio%20Details%22%3E%3Ci%20class%3D%22bx%20bx-link%22%3E%3C/i%3E%3C/a%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22col-lg-4%20col-md-6%20portfolio-item%20filter-web%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22portfolio-wrap%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20src%3D%22assets/img/portfolio/web1.jpg%22%20class%3D%22img-fluid%22%20alt%3D%22%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22portfolio-info%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ch4%3EWeb%201%3C/h4%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3EWeb%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22portfolio-links%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22assets/img/portfolio/web1.jpg%22%20data-gallery%3D%22portfolioGallery%22%20class%3D%22portfolio-lightbox%22%20title%3D%22Web%201%22%3E%3Ci%20class%3D%22bx%20bx-plus%22%3E%3C/i%3E%3C/a%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22portfolio-details_web.html%22%20data-gallery%3D%22portfolioDetailsGallery%22%20data-glightbox%3D%22type%3A%20external%22%20class%3D%22portfolio-details-lightbox%22%20title%3D%22Portfolio%20Details%22%3E%3Ci%20class%3D%22bx%20bx-link%22%3E%3C/i%3E%3C/a%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22col-lg-4%20col-md-6%20portfolio-item%20filter-flutter%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22portfolio-wrap%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20src%3D%22assets/img/portfolio/kelani.jpg%22%20class%3D%22img-fluid%22%20alt%3D%22%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22portfolio-info%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ch4%3EFlutter%20App%202%3C/h4%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3EFlutter%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22portfolio-links%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22assets/img/portfolio/kelani.jpg%22%20data-gallery%3D%22portfolioGallery%22%20class%3D%22portfolio-lightbox%22%20title%3D%22Flutter%20App%202%22%3E%3Ci%20class%3D%22bx%20bx-plus%22%3E%3C/i%3E%3C/a%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22kelani.html%22%20target%3D%22_blank%22%20data-gallery%3D%22portfolioDetailsGallery%22%20data-glightbox%3D%22type%3A%20external%22%20class%3D%22portfolio-details-lightbox%22%20title%3D%22Portfolio%20Details%22%3E%3Ci%20class%3D%22bx%20bx-link%22%3E%3C/i%3E%3C/a%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22col-lg-4%20col-md-6%20portfolio-item%20filter-native%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22portfolio-wrap%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20src%3D%22assets/img/portfolio/bridge.jpg%22%20class%3D%22img-fluid%22%20alt%3D%22%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22portfolio-info%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ch4%3ENative%20App%203%3C/h4%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3ENative%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22portfolio-links%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22assets/img/portfolio/bridge.jpg%22%20data-gallery%3D%22portfolioGallery%22%20class%3D%22portfolio-lightbox%22%20title%3D%22Native%20App%203%22%3E%3Ci%20class%3D%22bx%20bx-plus%22%3E%3C/i%3E%3C/a%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22bridge.html%22%20target%3D%22_blank%22%20data-gallery%3D%22portfolioDetailsGallery%22%20data-glightbox%3D%22type%3A%20external%22%20class%3D%22portfolio-details-lightbox%22%20title%3D%22Portfolio%20Details%22%3E%3Ci%20class%3D%22bx%20bx-link%22%3E%3C/i%3E%3C/a%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22col-lg-4%20col-md-6%20portfolio-item%20filter-web%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22portfolio-wrap%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20src%3D%22assets/img/portfolio/web2.jpg%22%20class%3D%22img-fluid%22%20alt%3D%22%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22portfolio-info%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ch4%3EWeb%202%3C/h4%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3EWeb%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22portfolio-links%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22assets/img/portfolio/web2.jpg%22%20data-gallery%3D%22portfolioGallery%22%20class%3D%22portfolio-lightbox%22%20title%3D%22Web%202%22%3E%3Ci%20class%3D%22bx%20bx-plus%22%3E%3C/i%3E%3C/a%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22portfolio-details_web.html%22%20data-gallery%3D%22portfolioDetailsGallery%22%20data-glightbox%3D%22type%3A%20external%22%20class%3D%22portfolio-details-lightbox%22%20title%3D%22Portfolio%20Details%22%3E%3Ci%20class%3D%22bx%20bx-link%22%3E%3C/i%3E%3C/a%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22col-lg-4%20col-md-6%20portfolio-item%20filter-native%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22portfolio-wrap%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20src%3D%22assets/img/portfolio/wings.jpg%22%20class%3D%22img-fluid%22%20alt%3D%22%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22portfolio-info%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ch4%3ENative%20App%204%3C/h4%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3ENative%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22portfolio-links%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22assets/img/portfolio/wings.jpg%22%20data-gallery%3D%22portfolioGallery%22%20class%3D%22portfolio-lightbox%22%20title%3D%22Native%20App%204%22%3E%3Ci%20class%3D%22bx%20bx-plus%22%3E%3C/i%3E%3C/a%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22wings.html%22%20data-gallery%3D%22portfolioDetailsGallery%22%20data-glightbox%3D%22type%3A%20external%22%20class%3D%22portfolio-details-lightbox%22%20title%3D%22Portfolio%20Details%22%3E%3Ci%20class%3D%22bx%20bx-link%22%3E%3C/i%3E%3C/a%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%0A%20%20%20%20%20%20%20%0A%0A%20%20%20%20%20%20%3C/div%3E%0A%0A%20%20%20%20%3C/div%3E%0A%20%20%3C/section%3E%3C%21--%20End%20Portfolio%20Section%20--%3E%0A%0A%20%20%3C%21--%20%3D%3D%3D%3D%3D%3D%3D%20Contact%20Section%20%3D%3D%3D%3D%3D%3D%3D%20--%3E%0A%20%20%3Csection%20id%3D%22contact%22%20class%3D%22contact%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22container%22%3E%0A%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22section-title%22%3E%0A%20%20%20%20%20%20%20%20%3Ch2%3EContact%3C/h2%3E%0A%20%20%20%20%20%20%20%20%3Cp%3EContact%20Me%3C/p%3E%0A%20%20%20%20%20%20%3C/div%3E%0A%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22row%20mt-2%22%3E%0A%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22col-md-6%20mt-4%20mt-md-0%20d-flex%20align-items-stretch%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22info-box%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ci%20class%3D%22bx%20bx-envelope%22%3E%3C/i%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ch3%3EEmail%20Me%3C/h3%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3Epererahimesh39@gmail.com%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22col-md-6%20mt-4%20mt-md-0%20d-flex%20align-items-stretch%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22info-box%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ci%20class%3D%22bx%20bx-share-alt%22%3E%3C/i%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ch3%3ESocial%20Profiles%3C/h3%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22social-links%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22https%3A//twitter.com/pererahimesh%22%22%20class%3D%22twitter%22%20target%3D%22_blank%22%3E%3Ci%20class%3D%22bi%20bi-twitter%22%3E%3C/i%3E%20%3C/a%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22https%3A//www.facebook.com/himesh.lucky/%22%20class%3D%22facebook%22%20target%3D%22_blank%22%3E%3Ci%20class%3D%22bi%20bi-facebook%22%3E%3C/i%3E%3C/a%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22https%3A//www.instagram.com/himesh_._/%22%20class%3D%22instagram%22%20target%3D%22_blank%22%3E%3Ci%20class%3D%22bi%20bi-instagram%22%3E%3C/i%3E%3C/a%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22https%3A//www.linkedin.com/in/himesh-lucky/%22%20class%3D%22linkedin%22%20target%3D%22_blank%22%3E%3Ci%20class%3D%22bi%20bi-linkedin%22%3E%3C/i%3E%3C/a%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22https%3A//github.com/HIMESH1018%22%20class%3D%22github%22%20target%3D%22_blank%22%3E%3Ci%20class%3D%22bi%20bi-github%22%20target%3D%22_blank%22%3E%3C/i%3E%3C/a%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%3C/div%3E%0A%0A%20%20%20%20%20%20%3Cform%20action%3D%22forms/contact.php%22%20method%3D%22post%22%20role%3D%22form%22%20class%3D%22php-email-form%20mt-4%22%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22row%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22col-md-6%20form-group%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cinput%20type%3D%22text%22%20name%3D%22name%22%20class%3D%22form-control%22%20id%3D%22name%22%20placeholder%3D%22Your%20Name%22%20required%3E%0A%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22col-md-6%20form-group%20mt-3%20mt-md-0%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cinput%20type%3D%22email%22%20class%3D%22form-control%22%20name%3D%22email%22%20id%3D%22email%22%20placeholder%3D%22Your%20Email%22%20required%3E%0A%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22form-group%20mt-3%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cinput%20type%3D%22text%22%20class%3D%22form-control%22%20name%3D%22subject%22%20id%3D%22subject%22%20placeholder%3D%22Subject%22%20required%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22form-group%20mt-3%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ctextarea%20class%3D%22form-control%22%20name%3D%22message%22%20rows%3D%225%22%20placeholder%3D%22Message%22%20required%3E%3C/textarea%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22my-3%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22loading%22%3ELoading%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22error-message%22%3E%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22sent-message%22%3EYour%20message%20has%20been%20sent.%20Thank%20you%21%3C/div%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22text-center%22%3E%3Cbutton%20type%3D%22submit%22%3ESend%20Message%3C/button%3E%3C/div%3E%0A%20%20%20%20%20%20%3C/form%3E%0A%0A%20%20%20%20%3C/div%3E%0A%20%20%3C/section%3E%3C%21--%20End%20Contact%20Section%20--%3E%0A%0A%20%20%3Cdiv%20class%3D%22credits%22%3E%0A%20%20%20%20%3C%21--%20All%20the%20links%20in%20the%20footer%20should%20remain%20intact.%20--%3E%0A%20%20%20%20%3C%21--%20You%20can%20delete%20the%20links%20only%20if%20you%20purchased%20the%20pro%20version.%20--%3E%0A%20%20%20%20%3C%21--%20Licensing%20information%3A%20https%3A//bootstrapmade.com/license/%20--%3E%0A%20%20%20%20%3C%21--%20Purchase%20the%20pro%20version%20with%20working%20PHP/AJAX%20contact%20form%3A%20https%3A//bootstrapmade.com/personal-free-resume-bootstrap-template/%20--%3E%0A%20%20%20%20%3C%21--%20Designed%20by%20%3Ca%20href%3D%22https%3A//bootstrapmade.com/%22%3EHimesh%3C/a%3E%20--%3E%0A%20%20%3C/div%3E%0A%0A%20%20%3C%21--%20Vendor%20JS%20Files%20--%3E%0A%20%20%3Cscript%20src%3D%22assets/vendor/purecounter/purecounter.js%22%3E%3C/script%3E%0A%20%20%3Cscript%20src%3D%22assets/vendor/bootstrap/js/bootstrap.bundle.min.js%22%3E%3C/script%3E%0A%20%20%3Cscript%20src%3D%22assets/vendor/glightbox/js/glightbox.min.js%22%3E%3C/script%3E%0A%20%20%3Cscript%20src%3D%22assets/vendor/isotope-layout/isotope.pkgd.min.js%22%3E%3C/script%3E%0A%20%20%3Cscript%20src%3D%22assets/vendor/swiper/swiper-bundle.min.js%22%3E%3C/script%3E%0A%20%20%3Cscript%20src%3D%22assets/vendor/waypoints/noframework.waypoints.js%22%3E%3C/script%3E%0A%20%20%3Cscript%20src%3D%22assets/vendor/php-email-form/validate.js%22%3E%3C/script%3E%0A%0A%20%20%3C%21--%20Template%20Main%20JS%20File%20--%3E%0A%20%20%3Cscript%20src%3D%22assets/js/main.js%22%3E%3C/script%3E%0A%0A%3C/body%3E%0A%0A%3C/html%3E'))
-  </script>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Himesh's Portfolio Website</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/snow_effect.css" rel="stylesheet">
+
+  <!--Snow Theme
+
+<div class="snowflake">
+  ❅
+  </div>
+  <div class="snowflake">
+  ❅
+  </div>
+  <div class="snowflake">
+  ❆
+  </div>
+  <div class="snowflake">
+  ❄
+  </div>
+  <div class="snowflake">
+  ❅
+  </div>
+  <div class="snowflake">
+  ❆
+  </div>
+  <div class="snowflake">
+  ❄
+  </div>
+  <div class="snowflake">
+  ❅
+  </div>
+  <div class="snowflake">
+  ❆
+  </div>
+  <div class="snowflake">
+  ❄
+  </div>
+  
+
+
+  <!-end of snow theme-->
+
+  <!-- =======================================================
+  * Template Name: Personal - v4.7.0
+  * Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="container">
+
+      <h1><a href="index.html">Himesh Perera</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
+      <h2>I'm a passionate <span>Android Developer</span></h2>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link active" href="#header">Home</a></li>
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#resume">Resume</a></li>
+          <li><a class="nav-link" href="#services">Services</a></li>
+          <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+      <div class="social-links">
+        <a href="https://twitter.com/pererahimesh"" class="twitter" target="_blank"><i class="bi bi-twitter"></i> </a>
+        <a href="https://www.facebook.com/himesh.lucky/" class="facebook" target="_blank"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/himesh_._/" class="instagram" target="_blank"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/himesh-lucky/" class="linkedin" target="_blank"><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/HIMESH1018" class="github" target="_blank"><i class="bi bi-github" target="_blank"></i></a>
+        <a href="https://stackoverflow.com/users/15071236/himesh-perera" class="stackoverflow" target="_blank"><i class="bi bi-stack-overflow" target="_blank"></i></a>
+      </div>
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= About Section ======= -->
+  <section id="about" class="about">
+
+    <!-- ======= About Me ======= -->
+    <div class="about-me container">
+
+      <div class="section-title">
+        <h2>About</h2>
+        <p>Learn more about me</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4" data-aos="fade-right">
+          <img src="assets/img/grad.jpg" class="img-fluid" alt="">
+        </div>
+        <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+          <h3>Android Developer</h3>
+          <p class="fst-italic">
+            I am a talented, ambitious and hardworking individual, with broad skills and experience in mobile developing, specially in android
+            developing projects.
+          </p>
+          <div class="row">
+            <div class="col-lg-6">
+              <ul>
+                <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>18 Oct 1997</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>https://himesh1018.github.io</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Chilaw , Sri Lanka</span></li>
+              </ul>
+            </div>
+            <div class="col-lg-6">
+              <ul>
+                <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>25</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>BSc in Information Technology</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>pererahimesh39@gmail.com</span></li>
+              
+              </ul>
+            </div>
+          </div>
+          <p>
+            Experienced Associate Software Engineer with a demonstrated history of working in the information technology and services industry. Skilled in Mobile Application Development, Java, Flutter, Kotlin, .NET Framework, and Android Development. Strong engineering professional with a Bsc in IT focused in Information Technology from SLIIT. 
+          </p>
+        </div>
+      </div>
+
+    </div><!-- End About Me -->
+
+    <!-- ======= Counts ======= -->
+    <!-- <div class="counts container">
+
+      <div class="row">
+
+        <div class="col-lg-3 col-md-6">
+          <div class="count-box">
+            <i class="bi bi-emoji-smile"></i>
+            <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Happy Clients</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
+          <div class="count-box">
+            <i class="bi bi-journal-richtext"></i>
+            <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Projects</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+          <div class="count-box">
+            <i class="bi bi-headset"></i>
+            <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Hours Of Support</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+          <div class="count-box">
+            <i class="bi bi-award"></i>
+            <span data-purecounter-start="0" data-purecounter-end="24" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Awards</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>End Counts -->
+
+    <!-- ======= Skills  ======= -->
+    <div class="skills container">
+
+      <div class="section-title">
+        <h2>Skills</h2>
+      </div>
+
+      <div class="row skills-content">
+
+        <div class="col-lg-6">
+
+          <div class="progress">
+            <span class="skill">Android <i class="val">85%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">Java <i class="val">75%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">Kotlin <i class="val">50%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-lg-6">
+
+          <div class="progress">
+            <span class="skill">Flutter | Dart <i class="val">70%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">C# | .NET <i class="val">50%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">HTML | CSS <i class="val">55%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div><!-- End Skills -->
+
+    <!-- ======= Interests ======= -->
+    <div class="interests container">
+
+      <div class="section-title">
+        <h2>Interests</h2>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-3 col-md-4">
+          <div class="icon-box">
+            <i class="ri-football-line" style="color: #5578ff;"></i>
+            <h3>Soccer</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+          <div class="icon-box">
+            <i class="ri-playstation-line" style="color: red;"></i>
+            <h3>Gaming</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+          <div class="icon-box">
+            <i class="ri-computer-line" style="color: #e80368;"></i>
+            <h3>Entertainment</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
+          <div class="icon-box">
+            <i class="ri-spotify-line" style="color: #15bb62;"></i>
+            <h3>Music</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class="ri-earth-line" style="color: #47aeff;"></i>
+            <h3>Travel</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class="ri-code-box-line" style="color: #15bb62;"></i>
+            <h3>Programming</h3>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class="ri-basketball-line" style="color: wheat;"></i>
+            <h3>Cricket</h3>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class="ri-camera-3-line" style="color: #ffa76e;"></i>
+            <h3>Photography</h3>
+          </div>
+        </div>
+       
+      </div>
+
+    </div><!-- End Interests -->
+
+    <!-- ======= Education Qualifications ======= -->
+    <div class="testimonials container">
+
+      <div class="section-title">
+        <h2>Education</h2>
+      </div>
+
+      <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                The Sri Lankan Ordinary Level (O-level) is a General Certificate of Education (GCE) qualification in Sri Lanka, conducted by the Department of Examinations of the Ministry of Education. It is based on the Cambridge University Ordinary Level qualification. </br>
+                <b> Grade 6 - Grade 11 </b>
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+              <img src="assets/img/testimonials/download.jpeg" class="testimonial-img" alt="">
+              <h3>Ordinary Level - 2013</h3>
+              <h4>St.Mary's College Chilaw</h4>
+            </div>
+          </div><!-- End testimonial item -->
+
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                The Sri Lankan Advanced Level (A-level), is a General Certificate of Education (GCE) qualification exam in Sri Lanka, similar to the British Advanced Level, conducted annually by the Department of Examinations of the Ministry of Education. </br>
+                <b> Art Stream </b>
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+              <img src="assets/img/testimonials/download.jpeg" class="testimonial-img" alt="">
+              <h3>Advanced Level - 2016</h3>
+              <h4>St.Mary's College Chilaw</h4>
+            </div>
+          </div><!-- End testimonial item -->
+
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                Bachelor of Science in Information Technology will equip you with the necessary skills and understanding to develop the career in wider area of IT project development </br> </br> </br>
+                <b> BSc in IT </b>
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+              <img src="assets/img/testimonials/sllit.jpeg" class="testimonial-img" alt="">
+              <h3> Bachelor Degree - 2018 | 2021</h3>
+              <h4>Sri Lanka Institute of Information Technology</h4>
+            </div>
+          </div><!-- End testimonial item -->
+
+          <!-- <div class="swiper-slide">
+            <div class="testimonial-item">
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                The Sri Lankan Ordinary Level (O-level) is a General Certificate of Education (GCE) qualification in Sri Lanka, conducted by the Department of Examinations of the Ministry of Education. It is based on the Cambridge University Ordinary Level qualification. </br>
+                <b> Grade 6 - Grade 11 </b>
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+              <img src="assets/img/testimonials/download.jpeg" class="testimonial-img" alt="">
+              <h3>Ordinary Level</h3>
+              <h4>St.Mary's College Chilaw</h4>
+            </div>
+          </div>End testimonial item -->
+
+          <!-- <div class="swiper-slide">
+            <div class="testimonial-item">
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                The Sri Lankan Ordinary Level (O-level) is a General Certificate of Education (GCE) qualification in Sri Lanka, conducted by the Department of Examinations of the Ministry of Education. It is based on the Cambridge University Ordinary Level qualification. </br>
+                <b> Grade 6 - Grade 11 </b>
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+              <img src="assets/img/testimonials/download.jpeg" class="testimonial-img" alt="">
+              <h3>Ordinary Level</h3>
+              <h4>St.Mary's College Chilaw</h4>
+            </div>
+          </div>End testimonial item -->
+
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <div class="owl-carousel testimonials-carousel">
+
+      </div>
+
+    </div><!-- End Testimonials  -->
+
+  </section><!-- End About Section -->
+
+  <!-- ======= Resume Section ======= -->
+  <section id="resume" class="resume">
+    <div class="container">
+    
+      <div class="section-title">
+        <h2>Resume</h2>
+        <p>Check My Resume</p>
+        <a href="assets/pdf/Himesh_Perera.pdf" target="_blank">Download CV </a>
+       
+      </div>
+     
+      <div class="row">
+        <div class="col-lg-6">
+          <h3 class="resume-title">Sumary</h3>
+          <div class="resume-item pb-0">
+            <h4>Himesh Perera</h4>
+            <p><em>I am a talented, ambitious and hardworking
+              individual, with broad skills and experiencein mobile developing, specially in android developing projects.Furthermore, I am adept at handling multiple tasks on a daily basis competently and at
+              working well under pressure.
+             </em></p>
+            <p>
+     
+            </p>
+          </div>
+
+          <h3 class="resume-title">Education</h3>
+          <div class="resume-item">
+            <h4>Certificate Course in English</h4>
+            <h5>Sep 2014</h5>
+            <p><em>St.Anthony's Institues of Higher Studies,Sri Lanka</em></p>
+          </div>
+
+         
+          <div class="resume-item">
+            <h4>Level 1 International Diploma in Computing</h4>
+            <h5>Nov 2014</h5>
+            <p><em>EdHat International,England</em></p>
+          </div>
+          
+         
+          <div class="resume-item">
+            <h4>Level 3 International Diploma in Computing</h4>
+            <h5>Nov 2014</h5>
+            <p><em>IDM Nations Campus International,Sri Lanka</em></p>
+          </div>
+          
+          <div class="resume-item">
+            <h4>Bachelor of Information Technology</h4>
+            <h5>2018 - 2020</h5>
+            <p><em>Sri Lanka Institute of Information Technology</em></p>
+          </div>
+        </div>
+        
+        <div class="col-lg-6">
+      
+          <h3 class="resume-title">Professional Experience</h3>
+          <div class="resume-item">
+            <h4>Intern Software Engineer</h4>
+            <h5>2021 | Jun - Dec |</h5>
+            <p><em>Stephen Innovations,Negombo,Sri Lanka </em></p>
+            <p>
+            <ul>
+              <li>Managed in the design, development, and implementation of the native mobile application products.</li>
+              <li>Managed up to 3|4 projects or tasks at a given time while under pressure </li>
+              <li>Contributed the assessment of all graphic materials in order to ensure quality and accuracy of the design</li>
+              <li>Discuss and keep a connections with the clients to efficient use of project </li>
+            </ul>
+            </p>
+          </div>
+          <div class="resume-item">
+            <h4>Associate Software Engineer</h4>
+            <h5>2022 | Jan - May |</h5>
+            <p><em>Stephen Innovations,Negombo,Sri Lanka</em></p>
+            <p>
+            <ul>
+              <li>Developed numerous mobile applications(ecommerce,Taxi,Eduation,Management, and Services).</li>
+              <li>Managed up to 4|5 projects or tasks at a given time while under pressure</li>
+              <li>Learn and deployed applications using cross platform technology as a beginner. | Flutter & Dart |</li>
+              <li>Created design presentations and portfolios to previous projects</li>
+            </ul>
+            </p>
+          </div>
+          <div class="resume-item">
+            <h4>Android Developer</h4>
+            <h5>2022 | June - Nov |</h5>
+            <p><em>Dishserve,Indonesia</em></p>
+            <p>
+            <!-- <ul>
+              <li>Developed numerous mobile applications(ecommerce,Taxi,Eduation,Management, and Services).</li>
+              <li>Managed up to 4|5 projects or tasks at a given time while under pressure</li>
+              <li>Learn and deployed applications using cross platform technology as a beginner. | Flutter & Dart |</li>
+              <li>Created design presentations and portfolios to previous projects</li>
+            </ul> -->
+            </p>
+          </div>
+
+
+          <div class="resume-item">
+            <h4>Associate Software Engineer</h4>
+            <h5>2022 | Nov - Present |</h5>
+            <p><em>Peercore,Colombo 3</em></p>
+            <p>
+            <!-- <ul>
+              <li>Developed numerous mobile applications(ecommerce,Taxi,Eduation,Management, and Services).</li>
+              <li>Managed up to 4|5 projects or tasks at a given time while under pressure</li>
+              <li>Learn and deployed applications using cross platform technology as a beginner. | Flutter & Dart |</li>
+              <li>Created design presentations and portfolios to previous projects</li>
+            </ul> -->
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End Resume Section -->
+
+  <!-- ======= Services Section ======= -->
+  <section id="services" class="services">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Services</h2>
+        <p>My Services</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+          <div class="icon-box">
+            <div class="icon"><i class="bx bxl-android"></i></div>
+            <h4><a href="#">Android Application Development</a></h4>
+            <p>Develop and deploy native mobile applications using java or kotlin.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+          <div class="icon-box">
+            <div class="icon"><i class="bx bxl-flutter"></i></div>
+            <h4><a href="#">Hybrid Application Development</a></h4>
+            <p>Develop and deploy cross paltform mobile applications using flutter and dart.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
+          <div class="icon-box">
+            <div class="icon"><i class="bx bx-support"></i></div>
+            <h4><a href="#">Support and Consultation</a></h4>
+            <p>Give Support and consultaion regarding android application development.</p>
+          </div>
+        </div>
+
+       
+
+      </div>
+
+    </div>
+  </section><!-- End Services Section -->
+
+  <!-- ======= Portfolio Section ======= -->
+  <section id="portfolio" class="portfolio">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Portfolio</h2>
+        <p>My Works</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12 d-flex justify-content-center">
+          <ul id="portfolio-flters">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-native">Native</li>
+            <li data-filter=".filter-flutter">Flutter</li>
+            <li data-filter=".filter-web">Web</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row portfolio-container">
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-native">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/buynear.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Native App 1</h4>
+              <p>Native</p>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/buynear.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Native App 1"><i class="bx bx-plus"></i></a>
+                <a href="buyNear.html" target="_blank" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-native">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/twelve7.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Native App 2</h4>
+              <p>Native</p>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/twelve7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Native App 2"><i class="bx bx-plus"></i></a>
+                <a href="twelve7.html" target="_blank" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      
+        <div class="col-lg-4 col-md-6 portfolio-item filter-flutter">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/maid.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Flutter App 1</h4>
+              <p>Flutter</p>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/maid.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Flutter App 1"><i class="bx bx-plus"></i></a>
+                <a href="maidFinder.html" target="_blank" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/web1.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Web 1</h4>
+              <p>Web</p>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/web1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 1"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details_web.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-flutter">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/kelani.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Flutter App 2</h4>
+              <p>Flutter</p>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/kelani.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Flutter App 2"><i class="bx bx-plus"></i></a>
+                <a href="kelani.html" target="_blank" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-native">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/bridge.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Native App 3</h4>
+              <p>Native</p>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/bridge.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Native App 3"><i class="bx bx-plus"></i></a>
+                <a href="bridge.html" target="_blank" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/web2.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Web 2</h4>
+              <p>Web</p>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/web2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details_web.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-native">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/wings.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Native App 4</h4>
+              <p>Native</p>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/wings.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Native App 4"><i class="bx bx-plus"></i></a>
+                <a href="wings.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+       
+
+      </div>
+
+    </div>
+  </section><!-- End Portfolio Section -->
+
+  <!-- ======= Contact Section ======= -->
+  <section id="contact" class="contact">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Contact</h2>
+        <p>Contact Me</p>
+      </div>
+
+      <div class="row mt-2">
+
+        <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
+          <div class="info-box">
+            <i class="bx bx-envelope"></i>
+            <h3>Email Me</h3>
+            <p>pererahimesh39@gmail.com</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
+          <div class="info-box">
+            <i class="bx bx-share-alt"></i>
+            <h3>Social Profiles</h3>
+            <div class="social-links">
+              <a href="https://twitter.com/pererahimesh" class="twitter" target="_blank"><i class="bi bi-twitter"></i> </a>
+              <a href="https://www.facebook.com/himesh.lucky/" class="facebook" target="_blank"><i class="bi bi-facebook"></i></a>
+              <a href="https://www.instagram.com/himesh_._/" class="instagram" target="_blank"><i class="bi bi-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/himesh-lucky/" class="linkedin" target="_blank"><i class="bi bi-linkedin"></i></a>
+              <a href="https://github.com/HIMESH1018" class="github" target="_blank"><i class="bi bi-github" target="_blank"></i></a>
+              <a href="https://stackoverflow.com/users/15071236/himesh-perera" class="stackoverflow" target="_blank"><i class="bi bi-stack-overflow" target="_blank"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <form action="forms/contact.php" method="post" role="form" class="php-email-form mt-4">
+        <div class="row">
+          <div class="col-md-6 form-group">
+            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+          </div>
+          <div class="col-md-6 form-group mt-3 mt-md-0">
+            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+          </div>
+        </div>
+        <div class="form-group mt-3">
+          <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+        </div>
+        <div class="form-group mt-3">
+          <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+        </div>
+        <div class="my-3">
+          <div class="loading">Loading</div>
+          <div class="error-message"></div>
+          <div class="sent-message">Your message has been sent. Thank you!</div>
+        </div>
+        <div class="text-center"><button type="submit">Send Message</button></div>
+      </form>
+
+    </div>
+  </section><!-- End Contact Section -->
+
+  <div class="credits">
+    <!-- All the links in the footer should remain intact. -->
+    <!-- You can delete the links only if you purchased the pro version. -->
+    <!-- Licensing information: https://bootstrapmade.com/license/ -->
+    <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/personal-free-resume-bootstrap-template/ -->
+    <!-- Designed by <a href="https://bootstrapmade.com/">Himesh</a> -->
+  </div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
